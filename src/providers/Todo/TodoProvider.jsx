@@ -41,7 +41,6 @@ export const TodoProvider = ({ children, tasks: tasksProp = [] }) => {
     setTasks(
       tasks.map((task) => {
         if (task.id === id) {
-          console.log(task);
           return { ...task, content: value };
         } else {
           return task;
